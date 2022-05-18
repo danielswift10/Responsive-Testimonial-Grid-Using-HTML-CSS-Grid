@@ -1,0 +1,584 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+}
+
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    display: flex;
+    position: relative;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(210, 46%, 95%);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 25px;
+}
+
+.p-1 span{
+    font-weight: 500;
+    display: block;
+    margin-bottom: 1px;
+}
+
+.p-2 span{
+    display: block;
+    margin-bottom: 16px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+}
+
+.p-2 span:nth-child(2){
+    line-height: 1.25rem;
+}
+
+.grid_container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "card_testimonial_daniel" "card_testimonial_jonathan" "card_testimonial_jeanette" "card_testimonial_patrick" "card_testimonial_kira";
+    row-gap: 30px;
+}
+
+.card{
+    border-radius: 10px;
+     padding: 30px 30px 20px 30px;
+}
+
+.card_testimonial_heading{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.card_testimonial_avatar{
+    flex: 10%;
+}
+
+.card_testimonial_avatar img{
+    border-radius: 50%;
+    width: 100%;
+    border: 2px solid hsla(0, 0%, 81%, 0.5);
+}
+
+.card_testimonial_avatar_details{
+    flex: 80%;
+}
+
+.card_testimonial_daniel{
+    grid-area: card_testimonial_daniel;
+    padding: 30px 30px 35px 30px;
+    background-color: hsl(263, 55%, 52%);
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top 0vh right 4vh;
+    background-size: 33%;
+}
+
+.card_testimonial_daniel .p-1 span{
+    font-size: 0.83rem;
+    color: hsl(0, 0%, 81%);
+}
+
+.card_testimonial_daniel .p-1 span:nth-child(2){
+    font-size: 0.74rem;
+    color: hsla(0, 0%, 81%, 0.5);
+}
+
+.card_testimonial_daniel .p-2 span{
+    font-size: 1.25rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.card_testimonial_daniel .p-2 span:nth-child(2){
+    font-size: 0.85rem;
+    color: hsla(0, 0%, 81%, 0.7);
+}
+
+.card_testimonial_jonathan{
+    grid-area: card_testimonial_jonathan;
+    padding: 30px 30px 40px 30px;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.card_testimonial_jonathan .p-1 span{
+    font-size: 0.83rem;
+    color: hsl(0, 0%, 81%);
+}
+
+.card_testimonial_jonathan .p-1 span:nth-child(2){
+    font-size: 0.74rem;
+    color: hsla(0, 0%, 81% 0.5);
+}
+
+.card_testimonial_jonathan .p-2 span{
+    font-size: 1.25rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.card_testimonial_jonathan .p-2 span:nth-child(2){
+    line-height: 1.25rem;
+    font-size: 0.8rem;
+    color: hsla(0, 0%, 81%, 0.7);
+}
+
+.card_testimonial_jeanette{
+    grid-area: card_testimonial_jeanette;
+    background-color: white;
+}
+
+.card_testimonial_jeanette .p-1 span{
+    font-size: 0.85rem;
+    color: hsl(217, 19%, 35%);
+}
+
+.card_testimonial_jeanette .p-1 span:nth-child(2){
+    font-size: 0.74rem;
+    color: hsla(217, 19%, 35%, 0.5);
+}
+
+.card_testimonial_jeanette .p-2 span{
+    font-size: 1.23rem;
+    color: hsl(217, 19%, 35%);
+}
+
+.card_testimonial_jeanette .p-2 span:nth-child(2){
+    font-size: 0.84rem;
+    color: hsla(219, 29%, 14%,0.7);
+}
+
+.card_testimonial_patrick{
+    grid-area: card_testimonial_patrick;
+    background-color: hsl(219, 29%, 14%);
+}
+
+.card_testimonial_patrick .p-1 span{
+    font-size: 0.83rem;
+    color: hsl(0, 0%, 81%);
+}
+
+.card_testimonial_patrick .p-1 span:nth-child(2){
+    font-size: 0.74rem;
+    color: hsla(0, 0%, 81%, 0.5);
+}
+
+.card_testimonial_patrick .p-2 span{
+    font-size: 1.25rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.card_testimonial_patrick .p-2 span:nth-child(2){
+    font-size: 0.85rem;
+    color: hsla(0, 0%, 81%, 0.7);
+}
+
+.card_testimonial_patrick .card_testimonial_avatar img{
+    border: 2px solid hsl(263, 55%, 52%);
+}
+
+.card_testimonial_kira{
+    grid-area: card_testimonial_kira;
+    background-color: white;
+}
+
+.card_testimonial_kira .p-1 span{
+    font-size: 0.85rem;
+    color: hsl(219, 29%, 14%);
+}
+
+.card_testimonial_kira .p-1 span:nth-child(2){
+    font-size: 0.74rem;
+    color: hsla(219, 29%, 14%, 0.5);
+}
+
+.card_testimonial_kira .p-2 span{
+    color: hsl(219, 29%, 14%);
+    font-size: 1.23rem;
+}
+
+.card_testimonial_kira .p-2 span:nth-child(2){
+    font-size: 0.798rem;
+    color: hsla(219, 29%, 14%,0.7);
+}
+
+.attribution { 
+    font-size: 0.6875rem;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 1%;
+} 
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.attribution a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 550px){
+    .card_testimonial_heading{
+        gap: 0px;
+    }
+    .card_testimonial_avatar{
+        flex: 10%;
+    }
+    
+    .card_testimonial_avatar img{
+        width: 70%;
+    }
+    
+    .card_testimonial_avatar_details{
+        flex: 95%;
+    }
+
+    .p-1 span{
+        padding-top: 5px;
+        margin-bottom: 0px;
+    }
+    
+    .card_testimonial_daniel{
+        padding: 40px 40px 45px 40px;
+        background-position: top 0vh right 6vh;
+        background-size: 20%;
+    }
+
+    .card_testimonial_daniel .p-1 span{
+        font-size: 1rem;
+    }
+    
+    .card_testimonial_daniel .p-1 span:nth-child(2){
+        font-size: 0.9rem;
+    }
+    
+    .card_testimonial_daniel .p-2 span{
+        font-size: 1.7rem;
+    }
+    
+    .card_testimonial_daniel .p-2 span:nth-child(2){
+        font-size: 1.15rem;
+        line-height: 1.5rem;
+    }
+    
+    .card_testimonial_jonathan{
+        padding: 40px 40px 45px 40px;
+    }
+
+    .card_testimonial_jonathan .p-1 span{
+        font-size: 1rem;
+    }
+    
+    .card_testimonial_jonathan .p-1 span:nth-child(2){
+        font-size: 0.9rem;
+    }
+    
+    .card_testimonial_jonathan .p-2 span{
+        font-size: 1.7rem;
+    }
+    
+    .card_testimonial_jonathan .p-2 span:nth-child(2){
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+    }
+    
+    .card_testimonial_jeanette{
+        padding: 40px 40px 45px 40px;
+    }
+    
+    .card_testimonial_jeanette .p-1 span{
+        font-size: 1rem;
+    }
+    
+    .card_testimonial_jeanette .p-1 span:nth-child(2){
+        font-size: 0.9rem;
+    }
+    
+    .card_testimonial_jeanette .p-2 span{
+        font-size: 1.7rem;
+    }
+    
+    .card_testimonial_jeanette .p-2 span:nth-child(2){
+        font-size: 1.15rem;
+        line-height: 1.42rem;
+    }
+    
+    .card_testimonial_patrick{
+        padding: 40px 40px 45px 40px;
+    }
+
+    .card_testimonial_patrick .p-1 span{
+        font-size: 1rem;
+    }
+    
+    .card_testimonial_patrick .p-1 span:nth-child(2){
+        font-size: 0.9rem;
+    }
+    
+    .card_testimonial_patrick .p-2 span{
+        font-size: 1.7rem;
+    }
+    
+    .card_testimonial_patrick .p-2 span:nth-child(2){
+        font-size: 1.15rem;
+        line-height: 1.42rem;
+    }
+    
+    .card_testimonial_kira{
+        padding: 40px 40px 45px 40px;
+    }
+    
+    .card_testimonial_kira .p-1 span{
+        font-size: 1rem;
+    }
+    
+    .card_testimonial_kira .p-1 span:nth-child(2){
+        font-size: 0.9rem;
+    }
+    
+    .card_testimonial_kira .p-2 span{
+        font-size: 1.7rem;
+        color: hsl(219, 29%, 14%);
+    }
+    
+    .card_testimonial_kira .p-2 span:nth-child(2){
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 163px 0px;
+    }
+    .p-1 span{
+        padding-top: 0;
+    }
+
+    .grid_container{
+        grid-template-columns: 253px 255px 255px 260px;
+        grid-template-rows: 280px 260px;
+        grid-template-areas: 
+        "card_testimonial_daniel card_testimonial_daniel card_testimonial_jonathan card_testimonial_kira" 
+        "card_testimonial_jeanette card_testimonial_patrick card_testimonial_patrick card_testimonial_kira";
+        column-gap: 29px;
+        row-gap: 25px;
+    }
+    
+    .card{
+        border-radius: 10px;
+        padding: 25px 33px 35px 33px;
+    }
+    
+    .card_testimonial_heading{
+        gap: 0px;
+        margin-bottom: 16px;
+    }
+    
+    .card_testimonial_avatar{
+        flex: 28%;
+    }
+    
+    .card_testimonial_avatar img{
+        border-radius: 50%;
+        max-width: 100%;
+        border: 2px solid hsl(210, 46%, 95%);
+    }
+    
+    .card_testimonial_avatar_details{
+        flex: 95%;
+    }
+
+    .card_testimonial_daniel{
+        grid-area: card_testimonial_daniel;
+        background-color: hsl(263, 55%, 52%);
+        background-image: url("images/bg-pattern-quotation.svg");
+        background-repeat: no-repeat;
+        background-position: top 0vh right 10vh;
+        background-size: 20%;
+    }
+
+    .card_testimonial_daniel .card_testimonial_heading{
+        gap: 0px;
+        margin-bottom: 16px;
+    }
+    
+    .card_testimonial_daniel .card_testimonial_avatar{
+        flex: 10%;
+    }
+    
+    .card_testimonial_daniel .card_testimonial_avatar img{
+        border-radius: 50%;
+        max-width: 75%;
+        border: 1.5px solid hsl(210, 46%, 95%);
+    }
+    
+    .card_testimonial_daniel .card_testimonial_avatar_details{
+        flex: 98%;
+    }
+
+    .card_testimonial_daniel .p-1 span{
+        font-size: 0.8rem;
+        margin-bottom: 1px;
+        color: hsl(0, 0%, 81%);
+    }
+    
+    .card_testimonial_daniel .p-1 span:nth-child(2){
+        font-size: 0.68rem;
+        color: hsla(0, 0%, 81%, 0.5);
+    }
+    
+    .card_testimonial_daniel .p-2 span{
+        font-size: 1.23rem;
+        color: hsl(0, 0%, 100%);
+    }
+    
+    .card_testimonial_daniel .p-2 span:nth-child(2){
+        font-size: 0.8rem;
+        line-height: 1.1rem;
+        font-weight: 500;
+        color: hsla(0, 0%, 81%,0.7);
+    }
+    
+    .card_testimonial_jonathan{
+        grid-area: card_testimonial_jonathan;
+        background-color: hsl(217, 19%, 35%);
+    }
+    
+    .card_testimonial_jonathan .p-1 span{
+        font-size: 0.8rem;
+        margin-bottom: 1px;
+        color: hsl(0, 0%, 81%);
+    }
+    
+    .card_testimonial_jonathan .p-1 span:nth-child(2){
+        font-size: 0.68rem;
+        color: hsla(0, 0%, 81%,0.5);
+    }
+
+    .card_testimonial_jonathan .p-2 span{
+        font-size: 1.2rem;
+        color: hsl(0, 0%, 100%);
+    }
+    
+    .card_testimonial_jonathan .p-2 span:nth-child(2){
+        line-height: 1.1rem;
+        font-size: 0.8rem;
+        color: hsla(0, 0%, 81%, 0.7);
+        font-weight: 500;
+    }
+    
+    .card_testimonial_jeanette{
+        grid-area: card_testimonial_jeanette;
+        background-color: white;
+    }
+    
+    .card_testimonial_jeanette .p-1 span{
+        font-size: 0.8rem;
+        margin-bottom: 1px;
+        color: hsl(217, 19%, 35%);
+    }
+    
+    .card_testimonial_jeanette .p-1 span:nth-child(2){
+        font-size: 0.68rem;
+        color: hsla(217, 19%, 35%,0.5);
+    }
+    
+    .card_testimonial_jeanette .p-2 span{
+        font-size: 1.27rem;
+        color: hsl(217, 19%, 35%);
+    }
+    
+    .card_testimonial_jeanette .p-2 span:nth-child(2){
+        font-size: 0.8rem;
+        color: hsla(217, 19%, 35%, 0.5);
+        line-height: 1.1rem;
+        font-weight: 500;
+    }
+    
+    .card_testimonial_patrick{
+        grid-area: card_testimonial_patrick;
+        background-color: hsl(219, 29%, 14%);
+    }
+
+    .card_testimonial_patrick .card_testimonial_heading{
+        gap: 1px;
+        margin-bottom: 16px;
+    }
+    
+    .card_testimonial_patrick .card_testimonial_avatar{
+        flex: 10%;
+    }
+    
+    .card_testimonial_patrick .card_testimonial_avatar img{
+        border-radius: 50%;
+        width: 75%;
+        border: 2px solid hsl(263, 55%, 52%);
+    }
+    
+    .card_testimonial_patrick .card_testimonial_avatar_details{
+        flex: 98%;
+    }
+    
+    .card_testimonial_patrick .p-1 span{
+        font-size: 0.8rem;
+        margin-bottom: 1px;
+        color: hsl(0, 0%, 81%);
+    }
+    
+    .card_testimonial_patrick .p-1 span:nth-child(2){
+        font-size: 0.68rem;
+        color: hsla(0, 0%, 81%,0.5);
+    }
+    
+    .card_testimonial_patrick .p-2 span{
+        font-size: 1.2rem;
+        color: hsl(0, 0%, 100%);
+    }
+    
+    .card_testimonial_patrick .p-2 span:nth-child(2){
+        font-size: 0.8rem;
+        line-height: 1.1rem;
+        font-weight: 500;
+        color: hsla(0, 0%, 81%, 0.7);
+    }
+    
+    .card_testimonial_kira{
+        grid-area: card_testimonial_kira;
+        background-color: white;
+    }
+    
+    .card_testimonial_kira .p-1 span{
+        font-size: 0.8rem;
+        margin-bottom: 1px;
+        color: hsl(217, 19%, 35%);
+    }
+    
+    .card_testimonial_kira .p-1 span:nth-child(2){  
+        font-size: 0.68rem;
+        color: hsla(217, 19%, 35%, 0.5);
+    }
+    
+    .card_testimonial_kira .p-2 span{
+        font-size: 1.27rem;
+        color: hsl(217, 19%, 35%);
+    }
+    
+    .card_testimonial_kira .p-2 span:nth-child(2){
+        font-size: 0.8rem;
+        color: hsla(217, 19%, 35%, 0.7);
+        line-height: 1.1rem;
+        font-weight: 500;
+    }
+}
